@@ -1,0 +1,19 @@
+[domain_interno]
+
+[nodes_interno]
+192.168.0.143 ansible_port=22 ansible_user=root ansible_password=senha_aqui
+
+
+
+
+#======================================NODES SEPARADOS======================================#
+[node1_interno]
+
+[node2_interno]
+
+#======================================NODES SEPARADOS======================================#
+[todos:children]
+domain_interno
+domain_externo
+nodes_interno
+nodes_externo
